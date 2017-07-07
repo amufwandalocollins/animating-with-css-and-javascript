@@ -1,0 +1,173 @@
+<DOCTYPE html>
+  <html>
+  <head>
+    
+    <title></title>
+  <link rel="stylesheet" type="text/css" href="bouncy.css">
+
+  </head>
+  <body>
+    <a class="button" href="https://github.com/amufwandalocollins">HOME</a>
+    <a class="button" href="http://ndalo.deviantart.com/">PROJECS</a>
+  <a class="button" href="codepen.io/amufwa">WORK</a>
+  
+
+  r
+    <div class ="animation">
+    <h1>I am animating with Js and Css</h1>
+  </div>
+  <div class="top">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+
+<div class=  "paragragh"
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class= "bottom">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="last">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidata
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+
+  <div class ="bouncy"
+
+  </canvas> 
+  <script>
+  var context;
+  function init()
+  {
+    context= myCanvas.getContext('2d');
+    context.beginPath();
+    context.fillStyle="#0000ff";
+    // Draws a circle of radius 20 
+    context.arc(100,100,20,0,Math.PI*2,true); context.closePath();
+    context.fill();
+  }
+</script>
+
+
+<body onLoad="init();">
+  <canvas id="myCanvas" width="200" height="200"  >
+  </canvas>
+
+  <script>
+var context;
+var x=100;
+var y=200;
+var dx=5;
+var dy=5;
+
+function init()
+{
+  context= myCanvas.getContext('2d');
+  setInterval(draw,10);
+}
+
+function draw()
+{
+  context.beginPath();
+  context.fillStyle="orange";
+  // Draws a circle of radius 20 at the coordinates 100,100 on the canvas
+  context.arc(x,y,20,0,Math.PI*2,true);
+  context.closePath();
+  context.fill();
+  x+=dx;
+  y+=dy;
+}
+
+</script>
+<body onLoad="init();">
+  <canvas id="myCanvas" width="300" height="300" >
+  </canvas>
+
+  <script>
+var context;
+var x=100;
+var y=100;
+var dx=5;
+var dy=5;
+
+function init()
+{
+  context= myCanvas.getContext('2d');
+  setInterval(draw,10);
+}
+
+function draw()
+{
+  context.clearRect(0,0, 200,200);
+  context.beginPath();
+  context.fillStyle="orange";
+  // Draws a circle of radius 20 at the coordinates 100,100 on the canvas
+  context.arc(x,y,20,0,Math.PI*2,true); 
+  context.closePath();
+  context.fill();
+  x+=dx;
+  y+=dy;
+}
+
+</script>
+<body onLoad="init();">
+  <canvas id="myCanvas" width="300px" height="300px" >
+  </canvas>
+
+  <script>
+var context;
+var x=100;
+var y=200;
+var dx=5;
+var dy=5;
+
+function init()
+{
+  context= myCanvas.getContext('2d');
+  setInterval(draw,10);
+}
+
+function draw()
+{
+  context.clearRect(0,0, 200,200);
+  context.beginPath();
+  context.fillStyle="orange";
+  // Draws a circle of radius 20 at the coordinates 100,100 on the canvas
+  context.arc(x,y,20,0,Math.PI*2,true);
+  context.closePath();
+  context.fill();
+  // Boundary Logic
+if( x<0 || x>200) dx=-dx; 
+if( y<0 || y>200) dy=-dy; 
+x+=dx; 
+y+=dy;
+}
+
+</script>
+<body onLoad="init();">
+  <canvas id="myCanvas" width="200px" height="200px" >
+  </canvas>
+</div>
+
+</body>
+</html>

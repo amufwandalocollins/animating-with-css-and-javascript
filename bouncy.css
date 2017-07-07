@@ -1,0 +1,184 @@
+.button {
+  padding: 15px 25px;
+  margin: 9px;
+  margin-bottom: 9px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: orange;
+  background-color: brown;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #d35f5f;
+
+}
+
+.button:hover {background-color: white}
+
+.button:active {
+  background-color: white;
+  box-shadow: 0 5px gray;
+  transform: translateY(4px);
+}
+
+/*heading*/
+  .animation{
+      animation: pulse 5s infinite;
+      max-width: 600px;
+      position: relative;
+      margin-left: 20%;
+      margin-top: 90px;
+  margin-bottom: 9px;
+
+}
+
+@keyframes pulse {
+  0% {
+    background-color: orange;
+  }
+  100% {
+    background-color: brown;
+  }
+  -webkit-animation: KEYFRAME-NAME 10s infinite;
+  -moz-animation:    KEYFRAME-NAME 10s infinite;
+  -o-animation:      KEYFRAME-NAME 10s infinite;
+  animation:         KEYFRAME-NAME 10s infinite;
+}
+
+@-webkit-keyframes KEYFRAME-NAME {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes KEYFRAME-NAME {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes KEYFRAME-NAME {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes KEYFRAME-NAME {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+
+}
+
+/*the rotaing circle*/
+.bouncy{
+
+  
+  max-width: 200px;
+  max-height: 200px;
+  margin-top:50%;
+  margin-left: 35%;
+
+}
+
+/*the actual body*/
+
+body{
+  background-color: black;
+  
+}
+
+/*the first paragraph*/
+.top{
+max-height: 400px;
+  max-width: 500px;
+  float: left;
+  float: left;
+  -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(9deg); /* Chrome, Safari, Opera */
+        transform: rotate(9deg);
+    border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
+    margin-top: 40px;
+    margin-bottom: 40px;
+     padding-left: 20px;
+    color: orange;
+}
+
+/*the second paragragh*/
+.paragragh{
+  max-height: 400px;
+  max-width: 500px;
+  float: right;
+ -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+    margin-right: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-top: 40px;
+ color: orange;  
+    border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
+}
+
+/*third pagagragh*/
+.bottom{
+  max-width: 500px;
+  max-height: 300px;
+  float: left;
+  -ms-transform: rotate(7deg); /* IE rown
+    -webkit-transform: rotate(9deg); /* Chrome, Safari, Opera */
+        transform: rotate(9deg);
+    border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
+    margin-top: 40px;
+      margin-bottom: 40px;
+     padding-left: 20px;
+color: orange;
+}
+
+/*last paragragh*/
+.last{
+  max-height: 400px;
+  max-width: 500px;
+  float: right;
+ -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+    margin-right: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-top: 40px;
+   
+    border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
+
+color: orange;
+}
+ h2{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  color: white;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+   max-width: 300px;
+      float: left;
+      margin-right: 20%;
+      margin-left: 10%;
+      margin-top: 90px;
+  margin-bottom: 40%;
+  margin-top: 40%;
+
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
